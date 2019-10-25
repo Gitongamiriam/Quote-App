@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{Qoutes} from '../qoutes';
 
 @Component({
   selector: 'app-qoutes',
@@ -6,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./qoutes.component.css']
 })
 export class QoutesComponent implements OnInit {
+qoutes:Qoutes[]=[
+  new Qoutes("Abraham lincoln", "Whatever you are be a good one", "",1),
+  new Qoutes("Albert Einstein", "If you want to live a happy life,tie to a goal,not to people or objects","",1),
+  new Qoutes("Ben Carson", "Uninformed people can be easily manipulated","",1),
+  new Qoutes("Gitonga Miriam","Work hard Untill your Bank Account balance looks like your mobile phone number","",1),
+  new Qoutes("Nick Vijucic","If i fail ,i try again ,and again","",1),
+  new Qoutes("Oprah Winfrey","Think like a Queen .A Queen is not afraid to fail to failure is another steppingstone to greatness","",1),
+  
+
+];
+  
 
   constructor() { }
 
