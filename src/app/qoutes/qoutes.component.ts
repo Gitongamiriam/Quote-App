@@ -17,8 +17,6 @@ qoutes:Qoutes[]=[
   
 
 ];
-  
-
   constructor() { }
 
   ngOnInit() {

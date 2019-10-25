@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Qoutes } from '../qoutes';
 
 @Component({
   selector: 'app-qoutes-detail',
