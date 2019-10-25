@@ -1,14 +1,14 @@
-<div>
+
+<div class ="jumbotron">
     <h1>KEEP INSPIRING ME QUOTES!</h1>
     <hr>
+</div>
     <ul>
         <li *ngFor='let qoute of qoutes ' >
             {{qoute.name}} 
-            {{qoute.saying}}
-            {{qoute.description}}
-            {{qoute.date}}
-
-            
+           <p> {{qoute.saying}}</p>
+           <p> {{qoute.description}}</p>
+            <p>{{qoute.date}}</p>
         </li>
+  
     </ul>
-  </div>
