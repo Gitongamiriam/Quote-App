@@ -7,6 +7,9 @@
 
 
 }
+.container{
+  background-image:url(https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=bench-carved-stones-cemetery-257360.jpg&fm=jpg)
+}
 h1{
   color:blue;
   font-size:bolder;
