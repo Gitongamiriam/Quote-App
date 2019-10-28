@@ -1,4 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 h1{
   color:red;
+  font-size:bold;
+  font-style:italic;
+  text-align:center;
 }

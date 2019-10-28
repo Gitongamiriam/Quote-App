@@ -1,14 +1,14 @@
 <h1>KEEP INSPIRING ME QUOTES!</h1>
     <hr>
         <div *ngFor='let qoute of qoutes ;let i=index'>
-        <ul>
-            <li>{{qoute.name}} 
-           <p> {{qoute.saying}}</p>
-           <p> {{qoute.description}}</p>
-            <p>{{qoute.date}}</p>
+            <ul>
+            <li>{{qoute.name}}
+           
             </li>
-            <button (click)='Display(i)'>Display</button>
-       </ul>
-       </div>
-
+            </ul>
+        <button (click)='displayDetails(i)'>display</button>
+        <div>
+           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute'></app-qoutes-detail>
+        </div>
+        </div>
 

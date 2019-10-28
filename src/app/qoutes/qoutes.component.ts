@@ -13,10 +13,15 @@ qoutes:Qoutes[]=[
   new Qoutes("Ben Carson", "Uninformed people can be easily manipulated","explains how ignorance it taking you",1),
   new Qoutes("Gitonga Miriam","Work hard Untill your Bank Account balance looks like your mobile phone number","explains the way of living",1),
   new Qoutes("Nick Vijucic","If i fail ,i try again ,and again","explains life lesson",1),
-  new Qoutes("Oprah Winfrey","Think like a Queen .A Queen is not afraid to fail to failure is another steppingstone to greatness","explains about failure ",1),
+  new Qoutes("Oprah Winfrey","Think like a Queen .A Queen is not afraid to fail to failure is another steppingstone to greatness","explains about failure",1),
   
 
 ];
+displayDetails(index){
+  this.qoutes[index].showQuotes = !this.qoutes[index].showQuotes;
+}
+  
+
   constructor() { }
 
   ngOnInit() {
