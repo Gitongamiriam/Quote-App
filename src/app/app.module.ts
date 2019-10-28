@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QoutesComponent } from './qoutes/qoutes.component';
 import { QoutesDetailComponent } from './qoutes-detail/qoutes-detail.component';
 import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QoutesComponent,
     QoutesDetailComponent,
-    HighlightDirective
+    HighlightDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

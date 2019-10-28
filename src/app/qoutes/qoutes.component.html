@@ -1,7 +1,7 @@
 <h1>KEEP INSPIRING ME QUOTES!</h1>
     <hr>
         <div *ngFor='let qoute of qoutes ;let i=index'>
-               <li appHighlight>{{qoute.name}}due on {{qoute.Completedate|date|uppercase}}</li>
+               <li appHighlight>{{qoute.name}}due on {{qoute.Completedate|dateCount}} days ago</li>
             <ul>
             <li>{{qoute.name}}
            
