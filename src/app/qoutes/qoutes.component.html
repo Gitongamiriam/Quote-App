@@ -8,7 +8,9 @@
             </ul>
         <button (click)='displayDetails(i)'>display</button>
         <div>
-           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute'></app-qoutes-detail>
+           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'completeQoute($event,i)'></app-qoutes-detail>
         </div>
         </div>
+
+
 
