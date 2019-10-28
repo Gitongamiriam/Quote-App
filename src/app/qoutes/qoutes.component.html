@@ -1,6 +1,7 @@
 <h1>KEEP INSPIRING ME QUOTES!</h1>
     <hr>
         <div *ngFor='let qoute of qoutes ;let i=index'>
+               <li appHighlight>{{qoute.name}}</li>
             <ul>
             <li>{{qoute.name}}
            
