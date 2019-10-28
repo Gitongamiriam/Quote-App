@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +9,7 @@ import { QoutesComponent } from './qoutes/qoutes.component';
 import { QoutesDetailComponent } from './qoutes-detail/qoutes-detail.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { QouteFormComponent } from './qoute-form/qoute-form.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { DateCountPipe } from './date-count.pipe';
     QoutesComponent,
     QoutesDetailComponent,
     HighlightDirective,
-    DateCountPipe
+    DateCountPipe,
+    QouteFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

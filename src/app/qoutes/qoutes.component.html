@@ -1,17 +1,29 @@
+<div class="container">
 <h1>KEEP INSPIRING ME QUOTES!</h1>
     <hr>
+    <div class="row">
+        <div class="col-md-6">
+        
         <div *ngFor='let qoute of qoutes ;let i=index'>
                <li appHighlight>{{qoute.name}}due on {{qoute.Completedate|dateCount}} days ago</li>
             <ul>
-            <li>{{qoute.name}}
-           
+            <li>{{qoute.name}}           
             </li>
+            <button  (click)='addUpVotes(i)'>Upvote</button>  {{qoute.upVotes}}
+            <button (click)='addDownVotes(i)'>Downvote</button>  {{qoute.downVotes}}
+
             </ul>
         <button (click)='displayDetails(i)'>display</button>
         <div>
            <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'completeQoute($event,i)'></app-qoutes-detail>
         </div>
         </div>
+    </div>
+    <div class="col-md-6">
+        <app-qoute-form (AddQoute)="addNewQoute($event)"></app-qoute-form>
+   </div>
+   </div>
+   </div>
 
 
 

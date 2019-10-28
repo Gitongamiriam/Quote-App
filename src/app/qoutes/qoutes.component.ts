@@ -15,8 +15,11 @@ qoutes:Qoutes[]=[
   new Qoutes("Nick Vijucic","If i fail ,i try again ,and again","explains life lesson",new Date(2012,12,1)),
   new Qoutes("Oprah Winfrey","Think like a Queen .A Queen is not afraid to fail to failure is another steppingstone to greatness","explains about failure",new Date(2012,12,8)),
   
-
 ];
+addNewQoute(qoute){
+  qoute.completeDate = new Date(qoute.completeDate)
+  this.qoutes.push(qoute)
+}
 displayDetails(index){
   this.qoutes[index].showQuotes = !this.qoutes[index].showQuotes;
 }
@@ -26,7 +29,12 @@ completeQoute(isComplete, index){
   }
 }
 
-
+addUpVotes(i){
+  this.qoutes[i].upVotes+=1;
+}
+addDownVotes(i){
+  this.qoutes[i].downVotes+=1;
+}
   
 
   constructor() { }
