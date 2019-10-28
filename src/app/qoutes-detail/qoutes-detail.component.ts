@@ -24,3 +24,4 @@ export class QoutesDetailComponent implements OnInit {
   }
 
 }
+
