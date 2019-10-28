@@ -1,6 +1,8 @@
 <div class="container-fluid">
+  <div class="jumbotron">
   <h2 class="text-center">CREATE A SAYING</h2>
   <hr />
+  </div>
   <form (ngSubmit)="submitQoute()" #qouteForm="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
@@ -52,7 +54,7 @@
           <p>Description is required</p>
         </div>
 
-         <button type="submit" class="btn btn-success">Add Qoute</button>
+         <button type="submit" class="btn btn-danger">Add Qoute</button>
         
        
       </div>

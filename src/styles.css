@@ -1,7 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+.jumbotron{
+  
+}
 h1{
-  color:red;
-  font-size:bold;
-  font-style:italic;
+  color:blue;
+  font-size:bolder;
   text-align:center;
 }
