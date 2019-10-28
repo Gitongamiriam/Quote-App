@@ -1,6 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 .jumbotron{
-  
+  color:blue;
+  font-family: cursive;
+  font-size:bolder;
+
+
 }
 h1{
   color:blue;
