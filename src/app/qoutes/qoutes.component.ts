@@ -23,9 +23,10 @@ addNewQoute(qoute){
 displayDetails(index){
   this.qoutes[index].showQuotes = !this.qoutes[index].showQuotes;
 }
-completeQoute(isComplete, index){
+deleteQoute(isComplete, index){
   if (isComplete) {
-    this.qoutes.splice(index,1);
+    // this.qoutes.splice(index,1);
+    let toDelete=confirm('Are you sure you want to delete'+this.qoutes[index].name)
   }
 }
 

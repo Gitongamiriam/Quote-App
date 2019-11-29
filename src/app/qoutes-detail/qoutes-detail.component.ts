@@ -11,7 +11,7 @@ export class QoutesDetailComponent implements OnInit {
   @Input() qoute:Qoutes;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  qouteComplete(complete:boolean){
+  qouteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
 

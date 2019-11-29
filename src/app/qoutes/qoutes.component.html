@@ -1,22 +1,22 @@
 <div class="container">
-<h1>@QUOTES GALLORY!</h1>
+<h1>Quote App</h1>
     <hr>
     <div class="row">
         <div class="col-md-6">
         
-        <div *ngFor='let qoute of qoutes ;let i=index'>
-               <li appHighlight>{{qoute.name}} due on {{qoute.Completedate|dateCount}} days ago</li>
-            <ul>
-            <li>{{qoute.name}}           
-            </li>
-            <button  (click)='addUpVotes(i)' class="btn btn-success">Upvote</button>  {{qoute.upVotes}}
+        <div *ngFor='let qoute of qoutes; let i=index'>
+                <li>{{qoute.name}}           
 
-            <button (click)='addDownVotes(i)'class="btn btn-success">Downvote</button>  {{qoute.downVotes}}
+               <li appHighlight>{{qoute}} due on {{qoute.Completedate|dateCount}} days ago</li>
+            <ul>
+            <button  (click)='addUpVotes(i)'>Upvote</button>  {{qoute.upVotes}}
+
+            <button (click)='addDownVotes(i)'>Downvote</button>  {{qoute.downVotes}}
 
             </ul>
         <button (click)='displayDetails(i)'>display</button>
         <div>
-           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'completeQoute($event,i)'></app-qoutes-detail>
+           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoutes-detail>
         </div>
         </div>
     </div>
