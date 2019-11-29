@@ -25,9 +25,15 @@ displayDetails(index){
 }
 deleteQoute(isComplete, index){
   if (isComplete) {
-    // this.qoutes.splice(index,1);
-    let toDelete=confirm('Are you sure you want to delete'+this.qoutes[index].name)
+    let toDelete=confirm('Are you sure you want to delete'+ this.qoutes[index].name + '?')
+  
+  if(toDelete){
+    this.qoutes.splice(index,1)
   }
+  }
+
+
+
 }
 
 addUpVotes(i){
