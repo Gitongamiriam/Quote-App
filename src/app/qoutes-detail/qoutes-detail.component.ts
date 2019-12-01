@@ -16,8 +16,6 @@ export class QoutesDetailComponent implements OnInit {
   }
 
 
-
-
   constructor() { }
 
   ngOnInit() {

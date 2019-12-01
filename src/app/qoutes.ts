@@ -4,7 +4,6 @@ export class Qoutes {
     downVotes:number;
     constructor(public name:string,
        public saying:string,
-       public description:string,
        public complete:Date)
        {
       this.upVotes=0;

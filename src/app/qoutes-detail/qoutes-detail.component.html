@@ -1,6 +1,9 @@
-<p>{{qoute.saying}}</p>
-<p>{{qoute.description}}</p>
-<button (click)= 'qouteDelete(true)'>Delete</button>
+<p>posted on {{qoute.complete|dateCount}}</p>
+<p>{{qoute.complete |amTimeAgo|lowercase}}</p>
+<button (click)= 'qouteDelete(true)'>Delete qoute</button>
+
+
+
 
 
 
