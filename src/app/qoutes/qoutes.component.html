@@ -13,7 +13,7 @@
                 </button>  {{qoute.downVotes}} 
 
             </ul>
-        <button (click)='displayDetails(i)'>display</button>
+        <button (click)='displayDetails(i)' class="btn btn-outline-info">display</button>
         <div>
            <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoutes-detail>
         </div>
