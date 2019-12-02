@@ -1,17 +1,17 @@
 .row{
     text-align:center;
-    font-size:140%;
+    font-size:160%;
     font-family:italic;
-    color:red;
+    color:whitesmoke;
 
 }
 h1{
     text-align:center;
-    color:red;
+    color:whitesmoke;
     font-family:Italic;
 }
 body{
-    background-image:url('https://cache.desktopnexus.com/thumbseg/1209/1209608-bigthumbnail.jpg');
+    background-image:url("https://www.lcgeducation.org/wp-content/uploads/2018/11/zac-durant-302752-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
