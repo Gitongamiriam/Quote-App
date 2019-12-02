@@ -4,10 +4,8 @@
 }
 h2{
     font-size:40px;
-    color:white;
+    color:red;
     text-align:center;
+    font-family:italic;
     
-}
-#mine{
-    display:inline-block;
 }
