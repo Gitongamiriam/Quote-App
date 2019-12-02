@@ -1,28 +1,34 @@
-<h1>Quote App</h1>
-    <hr>
-    <div class="row">
-        <div class="col-md-6">
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+            <h1>Quote App</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                
+                <div *ngFor='let qoute of qoutes; let i=index'>
+                       <p>{{qoute.saying}}</p>      
+                       <p>{{qoute.name}}</p> 
+             <ul>
+                    <button (click)='addUpVotes(i)'><i class ="fas fa-heart"></i></button>  {{qoute.upVotes}}
+                    
+                    <button (click)='addDownVotes(i)'  ><i class ="fas fa-heart"></i>
+                        </button>  {{qoute.downVotes}} 
         
-        <div *ngFor='let qoute of qoutes; let i=index'>
-               <p>{{qoute.saying}}</p>      
-               <p>{{qoute.name}} </p> 
-     <ul>
-            <button (click)='addUpVotes(i)'><i class ="fas fa-heart"></i></button>  {{qoute.upVotes}}
-            
-            <button (click)='addDownVotes(i)'  ><i class ="fas fa-heart"></i>
-                </button>  {{qoute.downVotes}} 
-
-            </ul>
-        <button (click)='displayDetails(i)' class="btn btn-outline-info">display</button>
-        <div>
-           <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoutes-detail>
+                    </ul>
+                <button (click)='displayDetails(i)' class="btn btn-outline-info">display</button>
+                <div>
+                   <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoutes-detail>
+                </div>
+                </div>
+            </div>
         </div>
+        <div class="col-md-6">
+            <app-qoute-form (AddQoute)="addNewQoute($event)"></app-qoute-form>
         </div>
-    </div>
-    <div class="col-md-6">
-        <app-qoute-form (AddQoute)="addNewQoute($event)"></app-qoute-form>
-   </div>
-   </div>
+    </body>
+</html>
 
 
 

@@ -25,7 +25,7 @@ displayDetails(index){
 }
 deleteQoute(isComplete, index){
   if (isComplete) {
-    let toDelete=confirm('Are you sure you want to delete'+ this.qoutes[index].name + '?')
+    let toDelete=confirm('Are you sure you want to delete'+ this.qoutes[index] .saying + '?')
   
   if(toDelete){
     this.qoutes.splice(index,1)
