@@ -8,8 +8,13 @@
                 <div class="col-md-6">
                 
                 <div *ngFor='let qoute of qoutes; let i=index'>
-                       <p>{{qoute.saying}}</p>      
-                       <p>{{qoute.name}}</p> 
+                       <div class="card" id="cla">
+                            {{qoute.name}}
+                            <br>
+                            {{qoute.saying}}
+
+
+                
              <ul>
                     <button (click)='addUpVotes(i)'><i class ="fas fa-heart"></i></button>  {{qoute.upVotes}}
                     
@@ -18,10 +23,12 @@
         
                     </ul>
                 <button (click)='displayDetails(i)' class="btn btn-outline-info">display</button>
+                </div>
+                <br>
                 <div>
                    <app-qoutes-detail *ngIf='qoute.showQuotes' [qoute]='qoute' (isComplete) = 'deleteQoute($event,i)'></app-qoutes-detail>
                 </div>
-                </div>
+            </div>
             </div>
         </div>
         <div class="col-md-6">
