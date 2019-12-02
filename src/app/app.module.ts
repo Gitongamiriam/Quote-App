@@ -11,7 +11,7 @@ import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 
-// import { MomentModule } from "ngx-moment";
+ import { MomentModule } from "ngx-moment";
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // MomentModule,
+    MomentModule,
 
   ],
   providers: [],
