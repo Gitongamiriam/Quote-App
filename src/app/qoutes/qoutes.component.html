@@ -3,7 +3,7 @@
   <head></head>
   <body>
     <h1>Quote App</h1>
-    <hr />
+    <hr/>
     <div class="row">
       <div class="col-md-6">
         <div *ngFor="let qoute of qoutes; let i = index">
@@ -27,7 +27,7 @@
                 qoute.downVotes
               }}
             </ul>
-            <button (click)="displayDetails(i)" class="btn btn-outline-info">
+            <button (click)="displayDetails(i)" class="btn btn-outline-primary">
               display
             </button>
           </div>
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <app-qoute-form (AddQoute)="addNewQoute($event)"></app-qoute-form>
     </div>
   </body>
